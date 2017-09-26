@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "description": "Batarin resume",
+  "main": "index.js",
+  "authors": [
+    "Ilya Batarin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "^2.2.0"
+  },
+  "devDependencies": {}
+}

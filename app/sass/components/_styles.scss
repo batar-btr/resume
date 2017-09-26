@@ -1,0 +1,84 @@
+body {
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    font-family: 'Roboto-Thin';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    transition: all 1s linear;
+    overflow: hidden;
+    z-index: 5;
+    .header-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        border-bottom: 5px solid rgb(88, 88, 88);
+        position: relative;
+        padding: 0 100px;
+        box-sizing: border-box;
+        background-image: linear-gradient(to left, rgba(1,1,1,0), rgba(1,1,1,0) 10px, white 10px, white 100% );
+        z-index: 10;
+        @media screen and (max-width: 800px) {
+            padding: 0 10px;
+            background-image:linear-gradient(to bottom, rgba(1,1,1,0.7), rgba(1,1,1,0.5)), linear-gradient(to left, rgba(1,1,1,0), rgba(1,1,1,0) 10px, white 10px, white 100% );
+            color: white;
+        }
+        img {
+            position: absolute;
+            margin: 10px 0;
+            border-radius: 50% 50%;
+            z-index: 10;
+            @media screen and (max-width: 720px) {
+                margin-right: 10px;
+            }
+        }
+        h1 {
+            font: 40px/80px 'Roboto-Thin';
+            transition: all 1s linear;
+            padding-left: 22%;
+            position: relative;
+            z-index: 10;
+            @media screen {
+                @media (max-width: 580px) {
+                    padding-left: 110px;
+                }
+                @media (max-width: 390px) {
+                    font-size: 28px;
+                    padding-left: 110px; 
+                }
+                @media (max-width: 310px) {
+                    padding-top: 10px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+        p {
+            line-height: 20px;
+            padding-bottom: 20px;
+            padding-left: 22%;
+            position: relative;
+            z-index: 10;
+            @media screen and (max-width: 580px) {
+                padding-left: 110px;
+            }
+        }
+    }
+    
+}
+
+.st0 {
+    fill:none;
+    stroke:#000000;
+    stroke-miterlimit:10;
+}

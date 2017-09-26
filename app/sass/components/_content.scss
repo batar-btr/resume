@@ -1,0 +1,147 @@
+.content {
+    max-width: 1200px;
+    box-shadow: -3px 0 3px gray;
+    box-sizing: border-box;
+    padding: 0 100px;
+    background: url('../img/sidebg-shadow.svg') right top repeat-y, linear-gradient(white, white);
+    background-size: 10px 25px;
+    margin: 0 auto;
+    transition: all 1s linear;
+    padding-top: 121px;
+    z-index: 1;
+    @media screen and (max-width: 800px) {
+        padding: 121px 20px 0 10px ;
+    }
+    section {
+        padding: 40px 0;
+        font-family: 'Roboto-Thin';
+        p {
+            font-size: 20px;
+            padding-left: 22%;
+            line-height: 1.5;
+            span {
+                font-family: 'Roboto';
+            }
+        }
+        .title {
+            position: relative;
+            height: 60px;
+            h2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 50px;
+                line-height: 60px;
+                text-transform: uppercase;
+                color: #F8F7F6;
+                letter-spacing: -0.1em;
+                user-select: none;
+                transition: all 0.2s linear;
+                @media print {
+                    display: none;
+                }
+            }
+            h3 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-right: 10px;
+                font-size: 30px;
+                line-height: 60px;
+                text-transform: uppercase;
+                color: black;
+                letter-spacing: -0.1em;
+                
+                
+            }
+        }
+    }
+    .skills {
+        ul {
+            width: 78%;
+            padding-left: 22%;
+            @media screen and (max-width: 600px) {
+                width: 100%;
+                padding-left: 0;
+            }
+            li {
+                transition: all 1s linear;
+                margin: 20px 0;
+                padding: 10px;
+                background-image:linear-gradient(to right, #306092, #0ba2a0), linear-gradient(to right, #bdece8, #bdece8);
+                background-repeat: no-repeat;
+                background-size: 10% 100%, 100% 100%;
+                color: white;
+                font-size: 30px;
+            }
+        }
+    }
+    .hobbys {
+        .hobbys-icon {
+            padding-left: 22%;
+            ul{
+                font-size: 0;
+            }
+            li {
+                width: 25%;
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        img {
+            width: 100px;
+            @media screen {
+                @media (max-width: 800px) {
+                    width: 80%;
+                }
+            }
+            @media print {
+                width: 50%;
+            }
+        }
+    }
+    .works {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-grow: 30px;
+            padding-left: 22%;
+        }
+        li {
+            
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            overflow: hidden;
+            &:hover .rollover {
+                transform: translateY(0);
+            }
+            &:first-child {
+                background: url('../img/clock.jpg') top center no-repeat;
+                background-size: 100% 100%;
+            }
+            &:nth-child(2) {
+                background: url('../img/digital.jpg') top center no-repeat;
+                background-size: 100% 100%;
+            }
+            .rollover {
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, rgba(48, 97, 146, 0.8), rgba(11, 162, 159, 0.8));
+                transform: translateY(-100%);
+                transition: transform 0.2s ease-in-out;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url("../fonts/Roboto-Thin.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf"); }
+
+/* Coolors Exported Palette - coolors.co/f4d06f-ff8811-9dd9d2-fff8f0-392f5a */
+/* HSL */
+/* RGB */
+@-webkit-keyframes drawline {
+  to {
+    stroke-dashoffset: 0; } }
+@keyframes drawline {
+  to {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes fadeOut {
+  to {
+    opacity: 0;
+    display: none; } }
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    display: none; } }
+
+@-webkit-keyframes svgMove {
+  to {
+    left: 900px;
+    top: 0;
+    width: 300px; } }
+
+@keyframes svgMove {
+  to {
+    left: 900px;
+    top: 0;
+    width: 300px; } }
+
+.svgwrap {
+  width: 300px;
+  position: absolute;
+  right: 1px;
+  top: -13px;
+  z-index: 5; }
+  .svgwrap svg {
+    vertical-align: top; }
+    @media screen and (max-width: 800px) {
+      .svgwrap svg path, .svgwrap svg polygon {
+        fill: #585858;
+        stroke: none; } }
+  .svgwrap #js {
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -moz-transform-origin: 400px 200px; }
+  .svgwrap #html {
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -moz-transform-origin: 130.209px 200px; }
+  .svgwrap #css {
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -moz-transform-origin: 670px 200px; }
+  .svgwrap #js, .svgwrap #css, .svgwrap #html {
+    stroke-dashoffset: -1578;
+    stroke-dasharray: 1578;
+    -webkit-animation: drawline 2s linear forwards;
+            animation: drawline 2s linear forwards; }
+
+body {
+  background-color: gray; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+header {
+  font-family: 'Roboto-Thin';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  overflow: hidden;
+  z-index: 5; }
+  header .header-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 5px solid #585858;
+    position: relative;
+    padding: 0 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: -webkit-linear-gradient(right, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 10px, white 10px, white 100%);
+    background-image: -o-linear-gradient(right, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 10px, white 10px, white 100%);
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 10px, white 10px, white 100%);
+    z-index: 10; }
+    @media screen and (max-width: 800px) {
+      header .header-wrap {
+        padding: 0 10px;
+        background-image: -webkit-linear-gradient(top, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.5)), -webkit-linear-gradient(right, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 10px, white 10px, white 100%);
+        background-image: -o-linear-gradient(top, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.5)), -o-linear-gradient(right, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 10px, white 10px, white 100%);
+        background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.5)), linear-gradient(to left, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 10px, white 10px, white 100%);
+        color: white; } }
+    header .header-wrap img {
+      position: absolute;
+      margin: 10px 0;
+      -webkit-border-radius: 50% 50%;
+              border-radius: 50% 50%;
+      z-index: 10; }
+      @media screen and (max-width: 720px) {
+        header .header-wrap img {
+          margin-right: 10px; } }
+    header .header-wrap h1 {
+      font: 40px/80px 'Roboto-Thin';
+      -webkit-transition: all 1s linear;
+      -o-transition: all 1s linear;
+      transition: all 1s linear;
+      padding-left: 22%;
+      position: relative;
+      z-index: 10; }
+
+@media screen and (max-width: 580px) {
+  header .header-wrap h1 {
+    padding-left: 110px; } }
+
+@media screen and (max-width: 390px) {
+  header .header-wrap h1 {
+    font-size: 28px;
+    padding-left: 110px; } }
+
+@media screen and (max-width: 310px) {
+  header .header-wrap h1 {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px; } }
+    header .header-wrap p {
+      line-height: 20px;
+      padding-bottom: 20px;
+      padding-left: 22%;
+      position: relative;
+      z-index: 10; }
+      @media screen and (max-width: 580px) {
+        header .header-wrap p {
+          padding-left: 110px; } }
+
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10; }
+
+.content {
+  max-width: 1200px;
+  -webkit-box-shadow: -3px 0 3px gray;
+          box-shadow: -3px 0 3px gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 100px;
+  background: url("../img/sidebg-shadow.svg") right top repeat-y, -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background: url("../img/sidebg-shadow.svg") right top repeat-y, -webkit-linear-gradient(white, white);
+  background: url("../img/sidebg-shadow.svg") right top repeat-y, -o-linear-gradient(white, white);
+  background: url("../img/sidebg-shadow.svg") right top repeat-y, linear-gradient(white, white);
+  -webkit-background-size: 10px 25px;
+          background-size: 10px 25px;
+  margin: 0 auto;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  padding-top: 121px;
+  z-index: 1; }
+  @media screen and (max-width: 800px) {
+    .content {
+      padding: 121px 20px 0 10px; } }
+  .content section {
+    padding: 40px 0;
+    font-family: 'Roboto-Thin'; }
+    .content section p {
+      font-size: 20px;
+      padding-left: 22%;
+      line-height: 1.5; }
+      .content section p span {
+        font-family: 'Roboto'; }
+    .content section .title {
+      position: relative;
+      height: 60px; }
+      .content section .title h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 50px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #F8F7F6;
+        letter-spacing: -0.1em;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear; }
+        @media print {
+          .content section .title h2 {
+            display: none; } }
+      .content section .title h3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-right: 10px;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: -0.1em; }
+  .content .skills ul {
+    width: 78%;
+    padding-left: 22%; }
+    @media screen and (max-width: 600px) {
+      .content .skills ul {
+        width: 100%;
+        padding-left: 0; } }
+    .content .skills ul li {
+      -webkit-transition: all 1s linear;
+      -o-transition: all 1s linear;
+      transition: all 1s linear;
+      margin: 20px 0;
+      padding: 10px;
+      background-image: -webkit-gradient(linear, left top, right top, from(#306092), to(#0ba2a0)), -webkit-gradient(linear, left top, right top, from(#bdece8), to(#bdece8));
+      background-image: -webkit-linear-gradient(left, #306092, #0ba2a0), -webkit-linear-gradient(left, #bdece8, #bdece8);
+      background-image: -o-linear-gradient(left, #306092, #0ba2a0), -o-linear-gradient(left, #bdece8, #bdece8);
+      background-image: linear-gradient(to right, #306092, #0ba2a0), linear-gradient(to right, #bdece8, #bdece8);
+      background-repeat: no-repeat;
+      -webkit-background-size: 10% 100%, 100% 100%;
+              background-size: 10% 100%, 100% 100%;
+      color: white;
+      font-size: 30px; }
+  .content .hobbys .hobbys-icon {
+    padding-left: 22%; }
+    .content .hobbys .hobbys-icon ul {
+      font-size: 0; }
+    .content .hobbys .hobbys-icon li {
+      width: 25%;
+      display: inline-block;
+      text-align: left; }
+  .content .hobbys img {
+    width: 100px; }
+
+@media screen and (max-width: 800px) {
+  .content .hobbys img {
+    width: 80%; } }
+    @media print {
+      .content .hobbys img {
+        width: 50%; } }
+  .content .works ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-flex: 30px;
+    -webkit-flex-grow: 30px;
+        -ms-flex-positive: 30px;
+            flex-grow: 30px;
+    padding-left: 22%; }
+  .content .works li {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+    overflow: hidden; }
+    .content .works li:hover .rollover {
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+              transform: translateY(0); }
+    .content .works li:first-child {
+      background: url("../img/clock.jpg") top center no-repeat;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%; }
+    .content .works li:nth-child(2) {
+      background: url("../img/digital.jpg") top center no-repeat;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%; }
+    .content .works li .rollover {
+      width: 100%;
+      height: 100%;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 97, 146, 0.8)), to(rgba(11, 162, 159, 0.8)));
+      background-image: -webkit-linear-gradient(top, rgba(48, 97, 146, 0.8), rgba(11, 162, 159, 0.8));
+      background-image: -o-linear-gradient(top, rgba(48, 97, 146, 0.8), rgba(11, 162, 159, 0.8));
+      background-image: linear-gradient(to bottom, rgba(48, 97, 146, 0.8), rgba(11, 162, 159, 0.8));
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+              transform: translateY(-100%);
+      -webkit-transition: -webkit-transform 0.2s ease-in-out;
+      transition: -webkit-transform 0.2s ease-in-out;
+      -o-transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .content .works li .rollover img {
+        width: 50px; }

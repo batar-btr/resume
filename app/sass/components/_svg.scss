@@ -1,0 +1,34 @@
+.svgwrap {
+    width: 300px;
+    position: absolute;
+    right: 1px;
+    top: -13px;
+    z-index: 5;
+    svg {
+        vertical-align: top;
+        path, polygon {
+            @media screen and (max-width: 800px) {
+                fill: rgb(88, 88, 88);
+                stroke: none;
+            }
+        }
+    }
+    #js {
+        transform-origin: 50% 50%;
+        -moz-transform-origin: 400px 200px;
+    }
+    #html {
+        transform-origin: 50% 50%;
+        -moz-transform-origin: 130.209px 200px;
+    }
+    #css {
+        transform-origin: 50% 50%;
+        -moz-transform-origin: 670px 200px;
+    }
+    #js, #css, #html {
+        
+        stroke-dashoffset: -1578;
+        stroke-dasharray: 1578;
+        animation: drawline 2s linear forwards;
+    }
+}

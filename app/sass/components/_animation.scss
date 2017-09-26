@@ -1,0 +1,28 @@
+@keyframes drawline {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes svgMove {
+    to {
+        left: 900px;
+        top: 0;
+        width: 300px;
+    }
+}
